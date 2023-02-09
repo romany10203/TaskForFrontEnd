@@ -1,0 +1,91 @@
+<div class="mainHeader bgHeader py-4">
+
+    <div class="py-2">
+        <div class="px-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div @trans-X class="">
+                        <div class="my-4">
+                            <h1 class="">Welcome<br/>to your gateway</h1>
+                        </div>
+                        <div class="my-4">
+                            <p  class="descHeader text-break">jkalnd lkansdl knlaBvkjDSNiuaEG:Dvhn:IUAEBvkjDSNiuaEG:Dv igUIAE hi;AHDNI uvhIUEH; vLKDH uvjkalnd lkansdl knlaBvkjDSNiuaEG:Dvhn:IUAEBvkjDSNiuaEG:Dv igUIAE hi;AHDNI uvhIUEH; vLKDH uv</p>
+                        </div>
+                        <div class="my-5 d-flex ">
+                            <a routerLink="/about" class="btn me-3 btn-success">Learn More</a>
+                            <a routerLink="/contact" class="btn btn-primary">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div  class="col-md-6">
+                    <div @trans  class="">
+                        <img class="img-fluid m-auto imgHeader" src="../../assets/images/hero section icon.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div @trans-Y class="about m-auto mx-3 my-5">
+    <div class="container aboutBox py-4">
+        <div class="row py-5">
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-5">
+                <div class=" px-3">
+                    <img  class="img-fluid" src="../../assets/images/-21Gww under logo.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-7">
+                <div class="py-4 px-2">
+                    <p class="h3">About</p>
+                    <p class="textAbout ">
+                        Apege Inu is Community Driven Project Setting a new trend in the oriental Crypto-Nft’s Swap, Game and staking ! We are a community driven business making crypto safe and transparent for everyone ! Apege Inu is literally a future of meme token ready to go into space,that takes its place in the world of the future! It is not just a meme token, it also stands for Swap Platform, NFT Marketplace, P2E Games, & Staking Platform This token is audited by SpyWolf, for more information please read the audit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="my-5">
+    <div class="container">
+        
+        <div class="text-center">
+            <p class="h1">Our Team</p>
+        </div>
+        <div @trans-Y class="rounded p-3 my-3 border">
+            <p>Description:</p>
+            <p class="text-muted">Apege Inu is Community Driven Project Setting a new trend in the oriental Crypto-Nft’s Swap, Game and staking ! We are a community driven business making crypto safe and transparent for everyone ! Apege Inu is literally a future of meme token ready to go into space,</p>
+        </div>
+
+        <div class="my-5">
+            <div class="row justify-content-center">
+                <div *ngFor="let c of teamMembers" class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="member rounded">
+                        <img [src]="c.imgSrc" class="img-fluid rounded"/>
+                        <div class="py-2 member-caption">
+                            <h3>{{c.name}}</h3>
+                            <p class="text-muted">{{c.role}}</p>
+                        </div>
+                        <div class="member-layer text-center">
+                            <div class="content">
+                              <h4>About {{c.name}}</h4>
+                              <p>{{c.desc}}</p>
+                              <div class="social m-auto text-center my-5">
+                                <a class="mx-1"  href="#"><i class="fa-2x fa-brands fa-2x fa-square-facebook rounded"></i></a>
+                                <a class="mx-1" href="#"><i class="fab fa-2x fa-square-instagram rounded"></i></a>
+                                <a class="mx-1" href="#"><i class="fab fa-2x fa-square-twitter rounded"></i></a>
+                                <a class="mx-1" href="#"><i class="fab fa-2x fa-square-pinterest rounded"></i></a>
+                                <a class="mx-1" href="#"><i class="fab fa-2x fa-square-youtube rounded"></i></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

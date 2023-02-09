@@ -1,0 +1,24 @@
+<div class="projects container my-5">
+    <div class="row ">
+        <div *ngFor='let p of projects' class="my-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="pro border">
+                <div class="proImg">
+                    <img class="img-fluid p-1" [src]="p.proImgSrc" alt="">
+                    <!-- <img class="img-fluid p-1" [src]="p.proSrc" alt=""> -->
+                </div>
+                <p class="h5 py-2 px-3 text-center my-3">Package Name</p>
+
+                <div class="aboutPackage p-3">
+                    <p class="h6 text-center">Package Name</p>
+                    <p>Rate: (3/5)</p>
+                    <p>Users: (19)</p>
+                    <p>About: <span class="">pla pla pla pla pla pla plpal pal pal </span> </p>
+                </div>
+            </div>
+            <div class="my-2 d-flex justify-content-around">
+                <a class="btn rounded btn-outline-danger" target="_blank" [href]="p.proSrc">Watch Demo <i class="fas fa-tv"></i></a>
+                <a class="btn rounded btn-outline-success" target="_blank">Buy <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

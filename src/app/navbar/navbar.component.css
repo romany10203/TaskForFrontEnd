@@ -1,0 +1,28 @@
+
+.forAct
+{
+    position: relative;
+}
+
+.forAct::before
+{
+    cursor: auto;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top:117%;
+    left:33%;
+    border-top:10px solid var(--bs-body-color);
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid transparent;
+}
+
+@media screen and (max-width:575px)
+{
+    .forAct::before
+    {
+        display: none;
+    }
+}

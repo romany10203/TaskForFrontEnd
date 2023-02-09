@@ -1,0 +1,178 @@
+
+.box img
+{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px  2px rgba(204,204,204,0.5)
+}
+
+.box
+{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box .box-layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.box-color1
+{
+        background: #307ad5;
+}
+.box-color2
+{
+        background:#f9bd44;
+}
+.box-color3
+{
+        background: #92278f;
+}
+.box-color4
+{
+        background:#10c45c;
+}
+.box-color5
+{
+        background:#e948ae;
+}
+.box-color6
+{
+        background:#e84b3a ;
+}
+.box-color7
+{
+        background:#1ec1d9;
+}
+.box-color8
+{
+        background:#47c58e;
+}
+.box:hover .box-color1
+{
+    background-color: rgba(48,122,213,.4);
+}
+.box:hover .box-color2
+{
+    background-color:rgba(249,189,68,.4);
+}
+.box:hover .box-color3
+{
+    background-color:rgba(146,39,143,.4)
+}
+.box:hover .box-color4
+{
+    background-color: rgba(16,196,92,.4)
+}
+.box:hover .box-color5
+{
+    background-color: rgba(233,72,174,.4);
+}
+.box:hover .box-color6
+{
+    background-color:rgba(232,75,58,.4);
+}
+.box:hover .box-color7
+{
+    background-color:rgba(30,193,217,.4);
+}
+.box:hover .box-color8
+{
+    background-color: rgba(71,197,142,.4);
+}
+
+.box-caption
+{
+   width: 80%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.service
+{
+	padding:20px;
+	margin: 20px 0px 10px 20px;
+	transition: all .5s;
+	cursor:pointer
+}
+
+.service img
+{
+	width: 100%;
+
+}
+
+.service h4
+{
+	font-weight: bold;
+	font-size:large;
+	margin:15px 0px;
+}
+
+.service p
+{
+	color:#8c8c8c;
+	margin:10px 0px;
+}
+
+.caption
+{
+	margin-bottom:50px;
+}
+
+.caption h3
+{
+	font-size: 35px;
+	text-align: center;
+	padding-top: 20px;
+	margin-top:20px;
+}
+
+.caption p
+{
+	text-align: center;
+	color: #8c8c8c;
+}
+
+.service:hover
+{
+	background-color:rgb(230, 230, 0);
+}
+
+
+
+.page
+{
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 10px 10px 70px 10px;
+	transition: all .5s;
+}
+
+.page:hover
+{
+	background-color: rgb(230, 230, 0);
+	box-shadow:-10px 10px 8px #808080;
+}
+
+.page h3
+{
+	font-size: 25px;
+	margin: 15px 0px;
+}
+
+.page p
+{
+	color: #8c8c8c;
+}

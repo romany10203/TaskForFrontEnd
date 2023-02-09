@@ -1,0 +1,102 @@
+
+.inp,.inp:focus{
+    border:none;
+    border-bottom: 1px solid #CCC;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.smallInp{
+    width:47.5%;
+}
+.ml{
+    margin-right:5%;
+}
+
+i{
+    /* background-color: #2746E6; */
+    font-size: 30px;
+    margin:auto auto;
+    cursor: pointer;
+    color: #0088CC;
+}
+
+.btnC{
+    background-color: #2746E6;
+    border:none;
+    color: #FFF;
+    border-radius:10px;
+    font-size: 14px;
+}
+.btnC:hover{
+    background-color: #2746E6;
+    color: #FFF;
+}
+
+.titleM{
+    font-size:25px;
+}
+
+.mSent , .mSent p{
+    margin-right:0;
+}
+.titleM2{
+    font-size:23px;
+}
+
+.errorControl{
+    color:#842029;
+    font-size:10px;
+}
+
+.shieldIcon{
+    position: relative;
+}
+.shieldIcon .fa-shield{
+    font-size: 50px;
+    color:#030D45;
+}
+.shieldIcon .fa-check{
+    position: absolute;
+    top:25%;
+    left:10px;
+    right:10px;
+    z-index:999;
+    color:#FFF;
+}
+
+@media (max-width:991px){
+    form,.mSent,.error{
+        width:75% !important;
+    }
+    .container p{
+        width:75% !important;
+        margin: auto;
+    }
+}
+
+@media (max-width:767px){
+    form,.mSent,.error{
+        width:90% !important;
+    }
+    .container p{
+        width:90% !important;
+    }
+
+}
+
+@media (max-width:576px){
+    form input , textarea{
+        width:100% !important;
+        margin-bottom:30px;
+    }
+    .titleM{
+        font-size: 20px;
+    }
+    .titleM2{
+        font-size:18px;
+    }
+}

@@ -1,0 +1,29 @@
+<section class="container text-center my-5">
+    <h1 class="top-cat">Custmers</h1>
+    <p>Discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.</p>
+    <div class="row justify-content-center">
+        <div *ngFor="let c of custmers" class="col-lg-4 col-md-6 col-sm-12">
+            <div class="member rounded">
+                <img [src]="c.imgSrc" class="img-fluid rounded"/>
+                <div class="member-caption">
+                    <h3>{{c.name}}</h3>
+                    <p>Since 2018</p>
+                </div>
+                <div class="member-layer text-center">
+                    <div class="content">
+                      <h4>About {{c.name}}</h4>
+                      <p>{{c.desc}}</p>
+                      <a href="#">Read More</a>
+                      <div class="social m-auto text-center mt-5">
+                        <a class="mx-1"  href="#"><i class="fa-2x fa-brands fa-2x fa-square-facebook rounded"></i></a>
+                        <a class="mx-1" href="#"><i class="fab fa-2x fa-square-instagram rounded"></i></a>
+                        <a class="mx-1" href="#"><i class="fab fa-2x fa-square-twitter rounded"></i></a>
+                        <a class="mx-1" href="#"><i class="fab fa-2x fa-square-pinterest rounded"></i></a>
+                        <a class="mx-1" href="#"><i class="fab fa-2x fa-square-youtube rounded"></i></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

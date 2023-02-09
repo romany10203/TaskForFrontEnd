@@ -1,0 +1,62 @@
+<div  *ngIf="!sent">
+    <div @transY class="container my-4">
+        <p class="title h2 text-center">Contact Us Page</p>
+        <p class="w-50 display-6 m-auto text-center">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        </p>
+    </div>
+    <div @trans-Y class="container my-4">
+        <div class="w-50 error m-auto" *ngIf="contactForm.invalid && contactForm.touched">
+            <div class="alert alert-danger text-center" role="alert">
+                <strong>Please full all fields</strong>
+            </div>
+        </div>
+        <form class="w-50 sm-w-100 m-auto" [formGroup]="contactForm" (ngSubmit)="sent=true;error=false">
+            <div class="my-4">
+                <input formControlName="Name" class="inp smallInp ml" placeholder="Name" type="text">
+                <input formControlName="Category" class="inp smallInp" placeholder="Category" type="text">
+            </div>
+            <div class="my-4">
+                <input formControlName="Phone" class="inp smallInp ml" placeholder="Phone" type="text">
+                <input formControlName="City" class="inp smallInp" placeholder="City" type="text">
+            </div>
+            <input formControlName="Email" class="inp w-100" placeholder="E-mail" type="text">
+            <strong class="errorControl" *ngIf="(contactForm.controls['Email'].invalid) && contactForm.controls['Email'].touched"  >*Please enter a valid E-mail</strong>
+
+            <textarea formControlName="Message" class="inp w-100 my-4" placeholder="Message" rows="3"></textarea>
+            <div class="d-flex my-2 justify-content-end">
+                <a class="mx-1" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a class="mx-1" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a class="mx-1" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <button [disabled]="contactForm.invalid" class="ms-3 btnC px-4 form-control w-auto btn" type="submit">Send a message</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div *ngIf="sent && !error">
+    <div @trans-Y class="container text-center">
+        <div class="mSent w-50 py-5 m-auto my-5 border rounded">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center m-auto">
+                        <div class="my-5 shieldIcon">
+                            <i class="fa-solid fa-shield fa-6x"></i>
+                            <i class="fa-solid fa-check fa-3x"></i>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <p class="titleM">THANK YOU FOR YOUR MESSAGE</p>
+                        <p class="titleM2 text-muted">It has been sent</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                        <button (click)="sent=!sent" class="btn btnC px-4 form-control w-auto btn">Send another message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

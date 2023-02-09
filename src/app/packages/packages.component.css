@@ -1,0 +1,48 @@
+
+.proImg
+{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+
+.projects img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.proImg:hover img
+{   transition:all 3s;
+    bottom:0;
+}
+
+.pro
+{
+    position: relative;
+    overflow: hidden;
+    border-radius:1px;
+    box-shadow:2px 2px 7px 2px rgb(212, 212, 212);
+}
+
+.projects .btn-outline-dark
+{
+    border-radius: 0;
+}
+
+.aboutPackage{
+    position: absolute;
+    top:100%;
+    background-color:rgba(0, 71, 4, 0.849);
+    color:#FFF;
+    transition:all .8s ;
+}
+
+.pro:hover .aboutPackage{
+    top :10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}

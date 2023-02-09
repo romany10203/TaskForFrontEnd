@@ -1,0 +1,175 @@
+<div class="container text-center my-5">
+    <div @trans-Y>
+        <h1 class="top-cat">Our Services</h1>
+        <p>Discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression.</p>
+    </div>
+    <div class="row">
+        
+        <div @trans-X class="col-lg-3 col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/1%20(2).jpg"/>
+                <div class="box-layer box-color1">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Software Engineering</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @transX  class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/4%20(1).jpg"/>
+                <div class="box-layer box-color2">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Quantum Mechanics</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @transY class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/3%20(3).jpg"/>
+                <div class="box-layer box-color3">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Quantum Mechanics</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @transX  class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/6.jpg"/>
+                <div class="box-layer box-color4">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Preventing Dementia</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @trans-X class="col-lg-3 col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/1%20(2).jpg"/>
+                <div class="box-layer box-color5">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Hidden Potential</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @trans-Y class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/4%20(1).jpg"/>
+                <div class="box-layer box-color6">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Software Engineering</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @trans-X class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/3%20(3).jpg"/>
+                <div class="box-layer box-color7">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Software Engineering</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+        <div @transX class=" col-lg-3  col-md-6">
+            <div class="box ">
+            <img src="../../assets/images/6.jpg"/>
+                <div class="box-layer box-color8">
+                    <div class="box-caption">
+                <i class="fas fa-laptop fa-3x float-left"></i>
+                    <h4>Software Engineering</h4>
+                    <p>(1,226) Topics</p>
+                </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+        </div>
+    
+
+    </div>
+    
+    
+</div>
+
+
+<div class="services-part my-5">
+
+    <div class="caption">
+        <h3>Our Offered Services</h3>
+        <p>Who are in extremely love with eco friendly system.</p>
+    </div>
+
+    <div class="center">
+        <div class="services container">
+
+            <div class="row">
+                <div *ngFor="let s of services2" class="col-md-4">
+                    <div class="service">
+                        <img [src]="s.imgSrc">
+                        <h4>{{s.name}}</h4>
+                        <p>{{s.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="pages-part">
+
+    <div class="container">
+        <div class="caption">
+            <h3>Some Features that Made us Unique</h3>
+            <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div class="center">
+            <div class="pages">
+                <div class="row">
+                    <div *ngFor="let s of services3" class="col-md-4">
+                        <div class="page">
+                            <h3>{{s.name}}</h3>
+                            <p>{{s.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
